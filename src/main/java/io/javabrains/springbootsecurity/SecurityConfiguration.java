@@ -10,6 +10,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+    // AUTHENTICATION configuration
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         // Set your configuration on the auth object
@@ -23,6 +25,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .roles("ADMIN");
     }
 
+    // AUTHORISATION configuration
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
