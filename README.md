@@ -1,7 +1,7 @@
 
 ### JPA authorisation with MySql DB
 
-- firstly you have to create `springsecurity` DB
+- firstly you have to create `springsecurity` DB in MySql
 - run following SQL insert for users creation:
 
     INSERT INTO user(user_name, password, active, roles)  
