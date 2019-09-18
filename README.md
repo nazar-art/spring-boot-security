@@ -3,6 +3,6 @@
 You can see 3 branches here with different Spring Security configurations:
 
 - master -> in-memory configuration
-- jdbc_authentication -> configuration with JDBC
-- jpa_&_mysql -> configuration with JPA and MySql
+ate- jdbc_configuration -> configuration with JDBC
+- jpa_configuration -> configuration with JPA and MySql
 
