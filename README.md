@@ -1,8 +1,10 @@
 ### Spring security configurations 
 
-You can see 3 branches here with different Spring Security configurations:
+Ldap server configuration.
 
-- master -> in-memory configuration
-- jdbc_configuration -> configuration with JDBC
-- jpa_configuration -> configuration with JPA and MySql
+Launch application class, logic credentials:
+
+    ben
+    benspassword
+
 
