@@ -27,4 +27,8 @@ Access to:
     
 With 'Authorization' header = `Bearer ...jwt...`
 
-Should return "Hello world".    
+Should return "Hello world".  
+
+---
+
+For updating project just replace hardcoded User at `MyUserDetailsService` -> to use real DB.  
