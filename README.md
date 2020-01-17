@@ -1,9 +1,6 @@
-### Spring security configurations 
+### Spring Security + JWT configurations 
 
-You can see 3 branches here with different Spring Security configurations:
-
-- master -> in-memory configuration
-- jdbc_configuration -> configuration with JDBC
-- jpa_configuration -> configuration with JPA and MySql
-- ldap_configuration -> configuration for Ldap Server
-
+1. Create `JwtUtil` class
+2. Create classes for request/response -> `AuthenticationRequest` & `AuthenticationResponse`
+3. Create '/authenticate' endpoint: take User ID + password -> return JWT as response
+4. 
