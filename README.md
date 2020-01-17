@@ -6,4 +6,5 @@ You can see 3 branches here with different Spring Security configurations:
 - jdbc_configuration -> configuration with JDBC
 - jpa_configuration -> configuration with JPA and MySql
 - ldap_configuration -> configuration for Ldap Server
+- jwt_configuration -> configuration for JWT authentication
 
