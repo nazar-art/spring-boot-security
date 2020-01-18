@@ -8,4 +8,5 @@ You can find branches with different Spring Security configurations:
 - ldap_configuration -> configuration for Ldap Server
 - jwt_configuration -> configuration for JWT authentication
 - accounts_login_configuration -> configuration to app with Facebook and Github accounts
+- custom_login -> custom login page for Spring Security
 
