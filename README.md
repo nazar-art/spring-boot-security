@@ -7,4 +7,5 @@ You can see 3 branches here with different Spring Security configurations:
 - jpa_configuration -> configuration with JPA and MySql
 - ldap_configuration -> configuration for Ldap Server
 - jwt_configuration -> configuration for JWT authentication
+- accounts_login_configuration -> configuration to app with Facebook and Github accounts
 
