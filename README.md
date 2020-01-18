@@ -1,10 +1,11 @@
 ### Spring security configurations 
 
-You can see 3 branches here with different Spring Security configurations:
+Implementing login with Facebook, Github accounts.
 
-- master -> in-memory configuration
-- jdbc_configuration -> configuration with JDBC
-- jpa_configuration -> configuration with JPA and MySql
-- ldap_configuration -> configuration for Ldap Server
-- jwt_configuration -> configuration for JWT authentication
+[Guide to Spring Oauth2 manual](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 
+After starting App navigate to:
+
+    http://localhost:8081/
+    
+You should be redirected to Github allowance page -> and later to `index.html` file.     
