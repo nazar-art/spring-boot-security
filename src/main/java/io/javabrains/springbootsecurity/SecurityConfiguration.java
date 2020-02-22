@@ -1,5 +1,6 @@
 package io.javabrains.springbootsecurity;
 
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -16,5 +17,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login")
                 .permitAll();
+    }
+
+    // AUTHENTICATION configuration
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        // Set your configuration on the auth object
+        auth.inMemoryAuthentication()
+                .withUser("columb")
+                .password("columb")
+//                .roles("USER")
+                .and()
+                .withUser("magelan")
+                .password("magelan");
+//                .roles("USER");
     }
 }
