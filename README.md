@@ -8,9 +8,11 @@ You will see custom login page:
 
 ![Custom Login page](custom_login_page.png)
 
-You can login with following in credentials:
+You can login with following credentials:
 
-    magelan
-    magelan 
+    user
+    pass 
+    
+If everything is ok you will see page with congratulations.    
     
     
