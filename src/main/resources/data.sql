@@ -1,7 +1,6 @@
 
 
 -- POPULATE Users table
-
 INSERT INTO users(username, password, enabled)
 VALUES ('user', 'pass', true);
 
