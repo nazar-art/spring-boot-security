@@ -3,7 +3,6 @@ package io.javabrains.springbootsecurityjwt.filter;
 import io.javabrains.springbootsecurityjwt.services.MyUserDetailsService;
 import io.javabrains.springbootsecurityjwt.util.JwtUtil;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

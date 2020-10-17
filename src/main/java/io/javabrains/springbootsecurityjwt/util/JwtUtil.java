@@ -8,9 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 import java.util.function.Function;
 
 /**
@@ -19,7 +17,7 @@ import java.util.function.Function;
 @Service
 public class JwtUtil {
 
-//    private final String SECRET_KEY = UUID.randomUUID().toString();
+    //    private final String SECRET_KEY = UUID.randomUUID().toString();
 //    private final String SECRET_KEY = "secret";
     private final String SECRET_KEY = "ce80d364-e538-4a46-8421-80fc5a1c70f4";
 
