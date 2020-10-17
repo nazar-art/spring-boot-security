@@ -19,7 +19,9 @@ import java.util.function.Function;
 @Service
 public class JwtUtil {
 
-    private final String SECRET_KEY = UUID.randomUUID().toString();
+//    private final String SECRET_KEY = UUID.randomUUID().toString();
+//    private final String SECRET_KEY = "secret";
+    private final String SECRET_KEY = "ce80d364-e538-4a46-8421-80fc5a1c70f4";
 
     public Boolean validateToken(String token, UserDetails userDetails) {
         final String username = extractUsername(token);
