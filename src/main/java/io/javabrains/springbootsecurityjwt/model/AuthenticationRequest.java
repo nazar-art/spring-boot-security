@@ -13,15 +13,12 @@ import java.io.Serializable;
  * @author Nazar Lelyak.
  */
 @Getter
-@Setter
-@Builder
-@ToString
-@NoArgsConstructor
 @AllArgsConstructor
+@ToString(of = {"username"})
 public class AuthenticationRequest implements Serializable {
 
     private static final long serialVersionUID = 0L;
 
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
 }

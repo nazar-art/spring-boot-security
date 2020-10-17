@@ -4,7 +4,7 @@ import io.javabrains.springbootsecurityjwt.model.AuthenticationRequest;
 import io.javabrains.springbootsecurityjwt.model.AuthenticationResponse;
 import io.javabrains.springbootsecurityjwt.services.MyUserDetailsService;
 import io.javabrains.springbootsecurityjwt.util.JwtUtil;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class HelloResource {
 
-    private AuthenticationManager authenticationManager;
-    private MyUserDetailsService myUserDetailsService;
-    private JwtUtil jwtUtil;
+    private final AuthenticationManager authenticationManager;
+    private final MyUserDetailsService myUserDetailsService;
+    private final JwtUtil jwtUtil;
 
     @RequestMapping("/hello")
     public String hello() {
