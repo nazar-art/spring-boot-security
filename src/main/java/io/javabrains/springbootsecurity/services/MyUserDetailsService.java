@@ -1,4 +1,4 @@
-package io.javabrains.springbootsecurityjwt.services;
+package io.javabrains.springbootsecurity.services;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,4 +1,4 @@
-package io.javabrains.springbootsecurityjwt.util;
+package io.javabrains.springbootsecurity.util;
 
 import com.google.common.collect.Maps;
 import io.jsonwebtoken.Claims;

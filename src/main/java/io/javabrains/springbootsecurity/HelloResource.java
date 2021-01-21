@@ -1,9 +1,9 @@
-package io.javabrains.springbootsecurityjwt;
+package io.javabrains.springbootsecurity;
 
-import io.javabrains.springbootsecurityjwt.model.AuthenticationRequest;
-import io.javabrains.springbootsecurityjwt.model.AuthenticationResponse;
-import io.javabrains.springbootsecurityjwt.services.MyUserDetailsService;
-import io.javabrains.springbootsecurityjwt.util.JwtUtil;
+import io.javabrains.springbootsecurity.model.AuthenticationRequest;
+import io.javabrains.springbootsecurity.model.AuthenticationResponse;
+import io.javabrains.springbootsecurity.services.MyUserDetailsService;
+import io.javabrains.springbootsecurity.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

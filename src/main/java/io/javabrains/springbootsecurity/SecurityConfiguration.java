@@ -1,7 +1,7 @@
-package io.javabrains.springbootsecurityjwt;
+package io.javabrains.springbootsecurity;
 
-import io.javabrains.springbootsecurityjwt.filter.JwtRequestFilter;
-import io.javabrains.springbootsecurityjwt.services.MyUserDetailsService;
+import io.javabrains.springbootsecurity.filter.JwtRequestFilter;
+import io.javabrains.springbootsecurity.services.MyUserDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
