@@ -26,14 +26,14 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String userName;
 
     @ToString.Exclude
     private String password;
 
-    private boolean active;
+    private Boolean active;
 
     private String roles;
 }

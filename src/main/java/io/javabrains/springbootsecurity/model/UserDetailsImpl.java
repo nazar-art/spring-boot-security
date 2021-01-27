@@ -22,13 +22,13 @@ public class UserDetailsImpl implements UserDetails {
 
     private String userName;
     private String password;
-    private boolean active;
+    private Boolean active;
     private List<GrantedAuthority> authorities;
 
     public UserDetailsImpl(User user) {
         this.userName = user.getUserName();
         this.password = user.getPassword();
-        this.active = user.isActive();
+        this.active = user.getActive();
         this.authorities = Arrays.stream(user.getRoles().split(","))
                 .map(SimpleGrantedAuthority::new)
                 .collect(Collectors.toList());
