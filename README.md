@@ -15,8 +15,8 @@ For demo run you have to sent POST request to:
 With 'Content-Type' = 'application/json' header & body:
 
     {
-        "username": "foo",
-        "password": "foo"
+        "username": "user",
+        "password": "pass"
     }                
 
 At response you will get JWT.

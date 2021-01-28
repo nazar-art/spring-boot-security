@@ -2,7 +2,7 @@ package io.javabrains.springbootsecurity.filter;
 
 import io.javabrains.springbootsecurity.services.MyUserDetailsService;
 import io.javabrains.springbootsecurity.util.JwtUtil;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -20,11 +20,11 @@ import java.io.IOException;
  * @author Nazar Lelyak.
  */
 @Component
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class JwtRequestFilter extends OncePerRequestFilter {
 
-    private final MyUserDetailsService userDetailsService;
     private final JwtUtil jwtUtil;
+    private final MyUserDetailsService userDetailsService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

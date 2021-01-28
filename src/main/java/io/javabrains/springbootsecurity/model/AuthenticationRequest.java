@@ -14,7 +14,7 @@ import java.io.Serializable;
 @ToString(of = {"username"})
 public class AuthenticationRequest implements Serializable {
 
-    private static final long serialVersionUID = 0L;
+    private static final long serialVersionUID = 1L;
 
     private final String username;
     private final String password;

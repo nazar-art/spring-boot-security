@@ -16,6 +16,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        return new User("foo", "foo", Collections.emptyList());
+        return new User("user", "path", Collections.emptyList());
     }
 }
