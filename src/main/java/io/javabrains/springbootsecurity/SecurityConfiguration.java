@@ -1,7 +1,6 @@
 package io.javabrains.springbootsecurity;
 
-import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -13,25 +12,27 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @EnableWebSecurity
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    UserDetailsService userDetailsService;
+    private final UserDetailsService userDetailsService;
 
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService)
-        ;
+        auth.userDetailsService(userDetailsService);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/admin").hasRole("ADMIN")
-                .antMatchers("/user").hasAnyRole("ADMIN", "USER")
-                .antMatchers("/").permitAll()
-                .and().formLogin();
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                    .antMatchers("/admin").hasRole("ADMIN")
+                    .antMatchers("/user").hasAnyRole("ADMIN", "USER")
+                    .antMatchers("/").permitAll()
+                .and()
+                    .formLogin();
     }
 
 
